@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cursosgs",
+  "info": {
+    "name": "Cursosg",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "richtext",
+      "required": true
+    },
+    "finicio": {
+      "type": "date",
+      "required": false
+    },
+    "ffin": {
+      "type": "date"
+    },
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "precio": {
+      "type": "integer",
+      "required": true
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "nombre"
+    }
+  }
+}

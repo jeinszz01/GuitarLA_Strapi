@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cursosgs",
+      "handler": "cursosg.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cursosgs/count",
+      "handler": "cursosg.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cursosgs/:id",
+      "handler": "cursosg.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cursosgs",
+      "handler": "cursosg.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cursosgs/:id",
+      "handler": "cursosg.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cursosgs/:id",
+      "handler": "cursosg.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
